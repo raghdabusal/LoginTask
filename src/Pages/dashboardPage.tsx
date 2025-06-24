@@ -1,9 +1,7 @@
-import UserTable from "../Components/UserTable";
-
 function Dashboard() {
   return (
     <div className="p-10">
-      <UserTable />
+      <h1>Dashboad Page</h1>
     </div>
   );
 }
