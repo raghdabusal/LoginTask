@@ -1,0 +1,206 @@
+/* === Email Input === */
+.unContainer {
+  display: block;
+  padding-bottom: 16px !important;
+}
+
+.unLabel {
+  color: var(--DeepNavy-DeepNavy, #112663);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.unInputWrapper {
+  position: relative;
+}
+
+.emailIcon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+
+.unInput {
+  padding-left: 40px !important;
+  display: block;
+  margin-top: 8px;
+  width: 100%;
+  height: 44px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--borderPrimary, #dfe1e5);
+  background: var(--Blanco, #fbfbfb);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.unInput::placeholder {
+  color: var(--contentTertiary, #969ca8);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* === Password Input === */
+.pwLabel {
+  color: var(--DeepNavy-DeepNavy, #112663);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+}
+
+.pwInput {
+  width: 100%;
+  height: 44px;
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--borderPrimary, #dfe1e5);
+  background: var(--Blanco, #fbfbfb);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.pwInput::placeholder {
+  color: var(--contentTertiary, #969ca8);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+/* === Eye Icon  === */
+.pwInputWrapper {
+  position: relative;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: 12px;
+  top: 45%;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* === Remember Me + Forgot Password ===  */
+.optionsRow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  height: 36px;
+  padding: 8px 0px 8px 0px;
+}
+
+/* === Toggle Switch === */
+.toggleWrapper {
+  display: flex;
+  cursor: pointer;
+}
+
+.toggleCheckbox {
+  display: none;
+}
+
+.toggleSlider {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  transition: background-color 0.2s;
+  margin-right: 10px;
+  border-radius: var(--corner-radii-xl, 12px);
+  background: var(--backgroundTertiary, #dfe1e5);
+}
+
+.toggleSlider::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  transition: transform 0.2s;
+  border-radius: 10px;
+  background: var(--backgroundPrimary, #fff);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.toggleCheckbox:checked + .toggleSlider {
+  background-color: #112663;
+}
+
+.toggleCheckbox:checked + .toggleSlider::before {
+  transform: translateX(12px);
+}
+
+.toggleLabel {
+  padding-left: 12px;
+  color: var(--DeepNavy-DeepNavy, #112663);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+/* === Forgot Password === */
+.forgotText {
+  color: var(--SkyBreeze-SkyBreeze, #66b5f7);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+/* == Login Button == */
+.loginButton {
+  border-radius: var(--Border-Radius-rounded-lg, 8px);
+  background: var(--DeepNavy-DeepNavy, #112663);
+  box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.15) inset;
+  width: 100%;
+  height: 56px;
+  margin: 24px 0px 24px 0px;
+  color: var(--contentInversePrimary, #fff);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  cursor: pointer;
+}
+
+/* ===  Divider === */
+.dividerWithText {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--borderPrimary, #dfe1e5); /* adjust if needed */
+  border: none;
+}
+
+.dividerText {
+  margin: 0 24px;
+  color: var(--contentInverseSecondary, #cbcfd6);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

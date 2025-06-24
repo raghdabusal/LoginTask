@@ -1,0 +1,59 @@
+.socialLoginContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.facebook {
+  display: flex; /* ADD THIS */
+  align-items: center; /* ADD THIS */
+  gap: 10px; /* already exists */
+  height: 56px;
+  border-radius: var(--Border-Radius-rounded-lg, 8px);
+  background: #1877f2;
+  box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.15) inset;
+  padding: 16px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.google {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 56px;
+  border-radius: var(--Border-Radius-rounded-lg, 8px);
+  border: 1px solid var(--Border-borderPrimary, #e4e4e7);
+  background: #fff;
+  box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.15) inset;
+  color: rgba(0, 0, 0, 0.54);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 16px;
+}
+
+.apple {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 56px;
+  border-radius: var(--Border-Radius-rounded-lg, 8px);
+  border: 1px solid var(--Border-borderPrimary, #e4e4e7);
+  background: #000;
+  padding: 16px;
+  box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.15) inset;
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
