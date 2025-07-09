@@ -2,3 +2,9 @@
   width: 299.86px;
   height: 128px;
 }
+
+@media (max-width: 480px) {
+  .clarityLogo {
+    max-width: 180px;
+  }
+}

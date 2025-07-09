@@ -57,3 +57,16 @@
   font-weight: 500;
   line-height: normal;
 }
+
+@media (max-width: 640px) {
+  .socialLoginContainer {
+    margin: 20px auto; /* Centers container on small screens */
+    padding: 0 1px; /* Adds side padding for better spacing */
+  }
+
+  .facebook,
+  .google,
+  .apple {
+    font-size: 14px; /* Slightly smaller font for small screens */
+  }
+}

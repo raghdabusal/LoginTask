@@ -4,13 +4,13 @@ function SearchBar() {
       <h3 className="block text-sm leading-5 font-semibold text-[#0B1935] font-[Inter] pb-2">
         Search
       </h3>
-      <div className="w-full sm:w-[272px] h-10 flex shadow-sm rounded-r-[4px]">
+      <div className="w-full sm:w-[272px] h-10 flex shadow-sm rounded-[4px] r">
         <input
           type="search"
           name="search"
           id="search-data"
-          className="flex-grow px-3 py-2 text-[#969CA8] placeholder-[#969CA8] font-medium text-sm leading-5 rounded-l-[4px] border border-gray-300 font-inter"
-          placeholder="Search by displays ID, name, email address"
+          className="flex-grow px-3 py-2 text-[#969CA8] placeholder-[#969CA8] font-normal text-sm leading-5 rounded-l-[4px] border border-gray-300 font-inter"
+          placeholder="Search by displays ID, nam..."
         />
 
         <button

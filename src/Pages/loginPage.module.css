@@ -31,3 +31,17 @@
   display: flex;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .pageContainer {
+    flex-direction: column; /* Stack vertically on small screens */
+    padding-block-start: 64px;
+    padding-block-end: 164px !important;
+    align-items: center;
+    height: 100%;
+  }
+
+  .rightSide {
+    padding-top: 20px;
+  }
+}
