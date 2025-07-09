@@ -204,3 +204,32 @@
   font-weight: 500;
   line-height: normal;
 }
+
+@media (max-width: 768px) {
+  .loginButton {
+    font-size: 16px;
+    height: 48px;
+    margin: 16px 0;
+  }
+
+  .dividerText {
+    font-size: 14px;
+    margin: 0 12px;
+  }
+
+  .unInput,
+  .pwInput {
+    font-size: 14px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .toggleLabel {
+    font-size: 13px;
+    padding-left: 1px;
+  }
+
+  .forgotText {
+    font-size: 13px;
+  }
+}
