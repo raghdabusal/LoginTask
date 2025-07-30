@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { EyeComponent } from "./assets/EyeComponent";
-import { EditComponent } from "./assets/EditComponenet";
-import { ManageComponent } from "./assets/manageRoles";
+import { EyeComponent } from "../Assets/EyeComponent";
+import { EditComponent } from "../Assets/EditComponenet";
+import { ManageComponent } from "../Assets/manageRoles";
 
 function Action() {
   const [isHoveredEye, setIsHoveredEye] = useState(false);

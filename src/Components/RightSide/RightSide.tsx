@@ -1,5 +1,5 @@
 import styles from "./rightSide.module.css";
-import LoginForm from "./loginForm";
+import AuthTabs from "../Tabs/AuthTabs";
 
 function RightSide() {
   return (
@@ -9,7 +9,7 @@ function RightSide() {
         <p className={styles.descrption}>
           Please enter your details to sign in.
         </p>
-        <LoginForm />
+        <AuthTabs />
       </div>
     </div>
   );

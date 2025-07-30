@@ -1,17 +1,30 @@
 import React, { useState } from "react";
-import SocialLogin from "./ SocialLogin";
+import SocialLogin from "../SocialLogin/ SocialLogin";
 import styles from "./loginForm.module.css";
-import { useNavigate } from "react-router-dom"; // Allows Your componenet to change the url  (Go to anopther page) using js without refreshing the page
+import { useNavigate } from "react-router-dom";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../FireBase/FireBase";
 
 function LoginForm() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const navigate = useNavigate(); // this create a navigate function that you can use it to go to a dfirrenct Route
+  const [error, setError] = useState("");
+  const navigate = useNavigate(); // this create a navigate function that you can use it to go to a different Route
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    navigate("/dashboard"); // calls Navigate function : to take the user to the DashboardPage
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault(); // stop form from reloading the page
+    setError("");
+
+    try {
+      await signInWithEmailAndPassword(auth, username, password);
+      navigate("/dashboard");
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError("Incorrect email or password. Please try again.");
+        console.error("Login error:", err.message);
+      }
+    }
   };
 
   const togglePassword = () => {
@@ -69,6 +82,10 @@ function LoginForm() {
 
         <div className={styles.forgotText}>Forgot password?</div>
       </div>
+
+      {error && (
+        <div style={{ color: "red", marginBottom: "10px" }}>{error}</div>
+      )}
 
       <button type="submit" className={styles.loginButton}>
         Login

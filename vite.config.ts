@@ -11,5 +11,9 @@ export default defineConfig(({ mode }) => {
     server: {
       port: parseInt(env.VITE_APP_PORT) || 3000,
     },
+    headers: {
+      "Cross-Origin-Opener-Policy": "same-origin",
+      "Cross-Origin-Embedder-Policy": "require-corp",
+    },
   };
 });

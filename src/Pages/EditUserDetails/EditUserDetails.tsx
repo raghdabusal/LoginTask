@@ -1,4 +1,4 @@
-import EditDetails from "../Components/editUser";
+import EditDetails from "../../Components/EditUserDetails/EditUserDetails";
 
 function EditUser() {
   return (

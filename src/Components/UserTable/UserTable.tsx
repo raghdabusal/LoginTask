@@ -1,6 +1,6 @@
-import { users as mockUsers } from "../Data/data";
-import { type User } from "../Data/data";
-import Action from "./Action";
+import { users as mockUsers } from "../../Data/data";
+import { type User } from "../../Data/data";
+import Action from "../Action/Action";
 
 function UserTable() {
   const columnClass =
@@ -50,7 +50,7 @@ function UserTable() {
                 style={{ left: "40px" }}
               >
                 #{user.id}
-              </td>{" "}
+              </td>
               <td className={cellClass}>{user.name}</td>
               <td className={cellClass}>{user.email}</td>
               <td className={cellClass}>{user.role}</td>

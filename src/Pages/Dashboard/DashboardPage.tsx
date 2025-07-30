@@ -1,5 +1,5 @@
-import SearchBar from "../Components/SearchBar";
-import UserTable from "../Components/UserTable";
+import SearchBar from "../../Components/SearchBar/SearchBar";
+import UserTable from "../../Components/UserTable/UserTable";
 
 function Dashboard() {
   return (

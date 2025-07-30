@@ -1,19 +1,21 @@
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
+import { initializeApp } from "firebase/app"; // start Firebase
+import { getAuth, GoogleAuthProvider } from "firebase/auth"; // to manage users logging in and signing up
+import { getFirestore } from "firebase/firestore"; /// to store and get data (database)
 
+//config for the firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyBpRaEqW2Fh16rozdRrzgV80N95qXLl6Cg",
-  authDomain: "loginhub-ae2e7.firebaseapp.com",
-  projectId: "loginhub-ae2e7",
-  storageBucket: "loginhub-ae2e7.firebasestorage.app",
-  messagingSenderId: "26028943133",
-  appId: "1:26028943133:web:4e0b52c68c865af79d63f4",
-  measurementId: "G-Q64PT7NL64", // Optional
+  apiKey: import.meta.env.VITE_APP_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_APP_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_FIREBASE_APP_ID,
 };
+const app = initializeApp(firebaseConfig); // starts the Firebase inside the app
+const auth = getAuth(app); // instance of Firebase Authentication (for sign up, login, sign out, checking if user is logged in)
 
-const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+// instance of Firebase Firestore (for storing and retrieving data)
+const provider = new GoogleAuthProvider();
 
-export const auth = getAuth(app);
-
-export const db = getFirestore(app);
+export { auth, db, provider };

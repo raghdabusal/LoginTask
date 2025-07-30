@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Details from "../Components/userDetails";
+import Details from "../../Components/UserDetails/UserDetails";
 
 function UserDetails() {
   return (

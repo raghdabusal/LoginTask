@@ -27,6 +27,7 @@
   align-items: center;
   gap: 10px;
   height: 56px;
+  width: 416px;
   border-radius: var(--Border-Radius-rounded-lg, 8px);
   border: 1px solid var(--Border-borderPrimary, #e4e4e7);
   background: #fff;
@@ -38,6 +39,7 @@
   font-weight: 500;
   line-height: normal;
   padding: 16px;
+  margin-top: 16px;
 }
 
 .apple {

@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LoginPage from "./Pages/loginPage";
-import DashboardPage from "./Pages/dashboardPage";
-import UserDetails from "./Pages/UserDetails";
-import EditUser from "./Pages/EditUser";
+import LoginPage from "./Pages/LoginPage/LoginPage";
+import DashboardPage from "./Pages/Dashboard/DashboardPage";
+import UserDetails from "./Pages/UserDetails/UserDetails";
+import EditUser from "./Pages/EditUserDetails/EditUserDetails";
 
 function App() {
   return (

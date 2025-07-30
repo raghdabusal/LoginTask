@@ -1,6 +1,6 @@
 import styles from "./loginPage.module.css";
-import LeftSide from "../Components/leftSide";
-import RightSide from "../Components/rightSide";
+import LeftSide from "../../Components/LeftSide/LeftSide";
+import RightSide from "../../Components/RightSide/RightSide";
 
 function LoginPage() {
   return (
